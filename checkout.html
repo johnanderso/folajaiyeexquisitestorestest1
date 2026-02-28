@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mom's Fashion Store - Checkout</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+<h1>Mom's Fashion Store</h1>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="clothes.html">Clothes</a>
+  <a href="jewelry.html">Jewelry</a>
+  <a href="accessories.html">Accessories</a>
+  <a href="cart.html">Cart</a>
+  <a href="checkout.html">Checkout</a>
+  <a href="chat.html">Chat</a>
+  <a href="order-tracking.html">Track Order</a>
+</nav>
+</header>
+
+<section class="checkout">
+<h2>Checkout</h2>
+<div id="cartItems"></div>
+<p class="total" id="totalPrice">Total: ₦0</p>
+
+<h3>Customer Information</h3>
+<input type="text" id="customerName" placeholder="Full Name">
+<input type="text" id="customerPhone" placeholder="Phone Number">
+<textarea id="customerAddress" placeholder="Delivery Address"></textarea>
+
+<button onclick="checkout()">Confirm & Pay</button>
+
+<p style="margin-top:20px; font-weight:bold;">
+Bank Transfer Info:<br>
+Bank: ACCESS BANK<br>
+Account Name: Mom's Fashion Store<br>
+Account Number: 1234567890
+</p>
+</section>
+
+<footer>
+© 2026 Mom's Fashion Store. All rights reserved.
+</footer>
+
+<script>
+displayCart();
+</script>
+</body>
+</html>
