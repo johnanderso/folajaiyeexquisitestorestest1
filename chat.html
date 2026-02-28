@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mom's Fashion Store - Chat</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header>
+<h1>Mom's Fashion Store</h1>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="clothes.html">Clothes</a>
+  <a href="jewelry.html">Jewelry</a>
+  <a href="accessories.html">Accessories</a>
+  <a href="cart.html">Cart</a>
+  <a href="checkout.html">Checkout</a>
+  <a href="chat.html">Chat</a>
+  <a href="order-tracking.html">Track Order</a>
+</nav>
+</header>
+
+<section class="chat">
+<h2>Chat with Seller (Demo)</h2>
+<div id="chatBox" class="chat-box" style="display:flex; flex-direction:column;">
+  <div class="chat-header">Mom's Fashion Store</div>
+  <div class="chat-messages" id="chatMessages"></div>
+  <div class="chat-input">
+    <input type="text" id="chatInput" placeholder="Type a message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+<button class="chat-button" onclick="toggleChat()">💬</button>
+</section>
+
+<footer>
+© 2026 Mom's Fashion Store. All rights reserved.
+</footer>
+</body>
+</html>
